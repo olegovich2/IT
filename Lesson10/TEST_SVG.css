@@ -1,0 +1,82 @@
+.main {
+    width: 75%;    
+}
+
+#svg_1:hover {
+    fill: blueviolet;
+    width: 220px;
+    height: 140px;
+    stroke: rgb(173, 9, 9);
+    stroke-width: 2px;
+    transition: 2s;
+    x: 230;
+}
+
+#svg_2:hover {
+    fill: aqua;
+    stroke: rgb(19, 223, 12);
+    stroke-width: 5px;
+    transition: 3s;
+    width: 150px;
+    height: 60px;
+    x: 265;
+}
+
+#svg_3:hover {
+    fill: rgb(193, 241, 17);
+    stroke: rgb(129, 7, 167);
+    stroke-width: 5px;
+    transform-origin: top center;
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+#svg_4:hover {
+    fill: aqua;
+    stroke: rgb(0, 4, 255);
+    stroke-width: 5px;
+    r: 30;
+    transition: 3s;
+}
+
+ #svg_4:hover~#svg_5 {
+    x:310;
+    width: 60px;    
+    stroke: rgb(0, 4, 255);
+    fill: rgb(0, 4, 255);
+    transition: 3s;  
+}
+
+#svg_4:hover~#svg_6 {
+    y:170;
+    height: 60px;    
+    stroke: rgb(0, 4, 255);
+    fill: rgb(0, 4, 255);
+    transition: 3s;  
+}
+
+#svg_2:hover~#svg_7 {
+    stroke: rgb(19, 223, 12);
+    fill: rgb(19, 223, 12);
+    stroke-width: 2px;
+    height: 60px;
+    transition: 3s;
+}
+
+#svg_1:hover~#svg_2 {
+    fill: aqua;
+    stroke: rgb(19, 223, 12);
+    stroke-width: 5px;
+    transition: 4s;
+    width: 150px;
+    height: 60px;
+    x: 265;
+}
+
+#svg_1:hover~#svg_7 {
+    stroke: rgb(19, 223, 12);
+    fill: rgb(19, 223, 12);
+    stroke-width: 2px;
+    height: 60px;
+    transition: 4s;
+} 

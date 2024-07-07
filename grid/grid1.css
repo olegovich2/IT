@@ -1,0 +1,13 @@
+.menu2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.menu2 div {
+    border: 1px solid black;
+    padding: 20px;
+}
+.coffee,
+.tea {
+    grid-column: 1/3;
+}

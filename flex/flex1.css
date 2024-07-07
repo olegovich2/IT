@@ -1,0 +1,71 @@
+.conteiner {
+    display: flex;
+    min-height: 40vh;
+    width: 100%;    
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+.bigBlock {
+    min-height: 20vh;
+    flex: 0 2 60%;    
+    background-color: green;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    padding-top: 20vh;  
+}
+.sitebar {    
+    flex: 0 1 33%;
+    margin: 10px 0px 0px 0px;
+}
+.smallBlock {
+    min-height: 15vh;
+    width: 100%;
+    background-color: blue;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    margin: 5px 10px 15px 10px;
+    padding-top: 8vh;
+}
+@media screen and (max-width: 900px) {
+    .conteiner {
+        flex-direction: column;
+    }
+    .bigBlock {
+        min-height: 40vh;
+        width: 99%; 
+    }
+    .sitebar {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5px;
+    }
+    .smallBlock {
+        min-height: 20vh;
+        width: 49%; 
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .conteiner {
+        flex-direction: column;
+    }
+    .bigBlock {
+        min-height: 30vh;
+        width: 100%; 
+    }
+    .sitebar {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .smallBlock {
+        min-height: 30vh;
+        width: 99%; 
+        padding-top: 20vh;
+    }
+}

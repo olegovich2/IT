@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+}
+.uuuu {
+    flex: 1 1 0;
+}
+h1 {
+    text-align: center;
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 5 1 0;
+}
+.el {
+    flex: 1 1 400px;
+    text-align: center;
+    margin: 20px;
+}
+.el h2 {
+    font-size: 40px;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0B2349;
+      display: table;
+      margin: 20px auto;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник рецептов</title>
+    <link rel="stylesheet" href="FinalWork.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d23624fc6e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="container">
+        <div id="navbar_button" class="navbar_buttons">
+            <div class="menu__item">
+                <button type="button" class="navbar__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Main.html">Главная</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Contact.html">Контакты</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Soup.html">Первые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SecondCourse.html">Вторые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./About.html">О сайте</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="navbar__home">
+                <a class="clr" href="./Main.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </button>
+        </div>
+        <div id="navbar_list" class="navbar__list">
+            <ul class="navbar__list__ul">
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./Soup.html">Первые блюда</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SecondCourse.html">Вторые блюда</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                </li>
+            </ul>
+        </div>
+        <div id="navbar_search" class="navbar__search">
+            <form class="form__style">
+                <input class="navbar__search__input" type="text" placeholder="Искать здесь...">
+                <button class="navbar__search__button" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="navbar__search__button1" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="containerForContent">
+        <a id="up"></a>
+        <main class="main">
+            <section class="section">
+                <div class="hello"></div>
+                <p>Данный сайт является итоговой работой курса обучения "Веб-разработка HTML, CSS, JavaScript". В данной работе
+                    представлены многие способы стилизации, изученные на данном курсе, а также несколько скриптов для управления
+                    содержимым сайта. Данный сайт адаптивный: представленные в браузере Google Chrome мобильные устройства воспринимают
+                    стилизацию сайта в полном объеме. В итоге реализованы полноэкранная, десктопная и мобильные версии сайта. Данный
+                    сайт является многостраничным. Реализовано выпадающее меню. Шапка сайта имеет несколько переходов, данные переходы
+                    скрываются при десктопной и мобильной версиях. Имеется форма для заполнения анкетных данных и реальзована отправка
+                    формы. На данный момент неактивна отправка, так как нет связи с сервером. Изображения адаптивны. Реализовано
+                    приветствие пользователя путем забора содержимого ключа из LocalStorage.   ууууууууу</p>
+            </section>
+            <div class="main__button">
+                <button class="button__up" type="button">
+                    <a href="#up"><i class="fa-solid fa-chevron-up"></i>
+                    </a>
+                </button>
+                <button class="button__contact" type="button">
+                    <a href="./Contact.html"><i class="fa fa-address-book" aria-hidden="true"></i>
+                    </a>
+                </button>                
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Владислав Пилипенко</p>
+    </footer>
+</body>
+<script src="click1.js"></script>
+<script src="click2.js"></script>
+<script src="greetingAll.js"></script>
+</html>

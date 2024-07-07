@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+img {
+    width: 350px;
+}
+.card {
+    display: inline-block;
+    border: 1px solid gainsboro;
+    padding: 20px;
+    box-shadow: 0 0 10px gainsboro;
+    margin: 40px;
+    animation: rotate-left 6s 5 both;
+}
+.card:hover {
+    transform: perspective(500px) rotate3d(40, 0, 60, 20deg) scale(1.2);
+    /* transform: scale(1.2); */
+}
+/* .card:hover {
+    transform:perspective(500px) rotateX(20deg);
+    transition-duration: 5s;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+} */
+/* @keyframes rotate-left {
+    from {
+        transform: rotateY(0);
+    transform-origin: left;
+}
+    to {
+        transform: rotateY(360deg);
+    transform-origin: left;
+
+    }
+} */
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="Images/1.jpg">
+    </div>
+    <div class="card">
+        <img src="Images/2.jpg">
+    </div>
+    <div class="card">
+        <img src="Images/5.jpg">
+    </div>
+</body>
+</html>

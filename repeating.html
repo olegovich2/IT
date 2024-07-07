@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.linear-gradient {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(20deg, red, lightblue 70%, green);
+}
+.repeat-gradient {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(90deg, rgb(205,3,168), rgb(236,0,0), blue);
+    background-size: 100px 100%;
+}
+.repeating-linear-gradient {
+    width: 300px;
+    height: 300px;
+    background-image: repeating-linear-gradient( to top right, rgb(205,3,168) 60px, lightblue 120px, green 121px);
+}
+    </style>
+</head>
+<body>
+    <div class="linear-gradient"></div><br>
+    <div class="repeat-gradient"></div><br>
+    <div class="repeating-linear-gradient"></div><br>
+</body>
+</html>

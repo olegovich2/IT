@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник рецептов</title>
+    <link rel="stylesheet" href="FinalWork.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="container">
+        <div id="navbar_button" class="navbar_buttons">
+            <div class="menu__item">
+                <button type="button" class="navbar__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Main.html">Главная</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Contact.html">Контакты</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Soup.html">Первые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SecondCourse.html">Вторые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./About.html">О сайте</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="navbar__home active">
+                <a class="clr" href="./Main.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </button>
+        </div>
+        <div id="navbar_list" class="navbar__list">
+            <ul class="navbar__list__ul">
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./Soup.html">Первые блюда</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SecondCourse.html">Вторые блюда</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                </li>
+            </ul>
+        </div>
+        <div id="navbar_search" class="navbar__search">
+            <form class="form__style">
+                <input class="navbar__search__input" type="text" placeholder="Искать здесь...">
+                <button class="navbar__search__button" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="navbar__search__button1" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="containerForContent">
+        <a id="up"></a>
+        <header id="full-screen" class="full-screen">
+            <div class="full-screen__body">
+                <div class="full-screen__caption">
+                    Сборник рецептов
+                </div>
+            </div>
+            <img class="full-screen__img" src="./Images/market.jpg">
+        </header>
+        <main id="main" class="main">
+            <section class="section">
+                <div class="hello"></div>
+                <form id="forma" method="post">
+                    <div class="label">
+                        <p>Заполните, пожалуйста, следующую форму:</p>
+                    </div>
+                    <div class="label0">
+                        <label for="textin" class="labelN">
+                            Имя:
+                        </label>
+                        <div class="textin">
+                            <input id="textin" type="text" name="name" placeholder="Маша Ростова" value="" required>
+                        </div>
+                    </div>
+                    <div class="label0">
+                        <label for="textin" class="labelN">
+                            Ваш телефон:
+                        </label>
+                        <div class="textin">
+                            <input id="textin" type="tel" name="phone" placeholder="+375257776655" value="" required>
+                        </div>
+                    </div>
+                    <div class="label0">
+                        <label for="textin" class="labelN">
+                            Ваш e-mail:
+                        </label>
+                        <div class="textin">
+                            <input id="textin" type="email" name="email" placeholder="7776655@tut.by" value="" required>
+                        </div>
+                    </div>
+                    <div class="label0">
+                        <label for="textin" class="labelN">
+                            Ваш Instagram:
+                        </label>
+                        <div class="textin">
+                            <input id="textin" type="text" name="url" placeholder="www.instagram.com/7776655*" value=""
+                                required>
+                        </div>
+                    </div>
+                    <label class="labelN">
+                        Запомнить меня:
+                    </label>
+                    <div class="textin">
+                        <input class="butagree" type="checkbox" name="checkbox" checked>
+                    </div>
+                    <button id="textin1" type="submit">Сохранить</button>
+                </form>
+                <p>Пора вырваться из однообразия своего меню и перестать ломать голову, что бы такое приготовить
+                    новенькое и
+                    вкусненькое.</p>
+            </section>
+            <div class="main__button">
+                <button class="button__up" type="button">
+                    <a href="#up"><i class="fa-solid fa-chevron-up"></i>
+                    </a>
+                </button>
+                <button class="button__contact" type="button">
+                    <a href="./Contact.html"><i class="fa fa-address-book" aria-hidden="true"></i>
+                    </a>
+                </button>
+                <button class="button__about" type="button">
+                    <a href="./About.html"><i class="fa fa-info-circle"></i>
+                    </a>
+                </button>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Владислав Пилипенко</p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/d23624fc6e.js" crossorigin="anonymous"></script>
+<script src="click1.js"></script>
+<script src="click2.js"></script>
+<script src="work_forma.js"></script>
+<script src="greeting.js"></script>
+
+</html>

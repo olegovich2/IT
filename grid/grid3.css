@@ -1,0 +1,29 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas: 
+    'header header header'
+    'nav article ads'
+    'footer footer footer';
+    grid-gap: 10px;
+    height: 100vh;
+}
+header, article, nav, footer {
+    background-color: goldenrod;
+}
+#pageHeader {
+    grid-area: header;
+}
+#mainArticle {
+    grid-area: article;
+}
+#mainNav {
+    grid-area: nav;
+}
+#siteAds {
+    grid-area: ads;
+}
+#pageFooter {
+    grid-area: footer;
+}

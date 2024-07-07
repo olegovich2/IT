@@ -1,0 +1,153 @@
+.containerForContent {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.full-screen {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.26);
+  margin: 0 100px;
+  flex-flow: row wrap;
+}
+
+.full-screen__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.full-screen__caption {
+  font-size: 100px;
+  line-height: 150%;
+  font-variant: small-caps;
+  font-weight: bolder;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.full-screen__img {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 80vh;
+  object-fit: cover;
+}
+
+.main {
+  position: relative;
+}
+
+.section {
+  padding: 5px 10px;
+  margin: 0px 100px;
+  background-color: antiquewhite;
+  border-radius: 0.25em;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.hello {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.icons_card {
+  display: inherit;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 40px;
+}
+
+.fa-brands {
+  color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  color: rgba(253, 165, 0, 1);
+}
+
+.fa-brands:active {
+  color: rgba(253, 249, 0, 1);
+}
+
+@media screen and (max-width: 999px) {
+  .full-screen {
+    margin: 0;
+    min-height: 60vh;
+  }
+
+  .full-screen__caption {
+    font-size: 80px;
+  }
+
+  .full-screen__img {
+    min-height: 60vh;
+  }
+
+  .section {
+    margin: 0;
+  }
+
+  .icons_card {
+    gap: 30px;
+    font-size: 30px;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .full-screen,
+  .full-screen__img {
+    min-height: 40vh;
+  }
+
+  .full-screen__caption {
+    font-size: 60px;
+  }
+
+  .icons_card {
+    gap: 25px;
+    font-size: 25px;
+    padding: 20px 0;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+
+  .full-screen,
+  .full-screen__img {
+    min-height: 20vh;
+  }
+
+  .full-screen__caption {
+    font-size: 40px;
+  }
+
+  .icons_card {
+    gap: 20px;
+    font-size: 30px;
+    padding: 15px 0;
+  }
+
+}

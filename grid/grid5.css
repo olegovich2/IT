@@ -1,0 +1,98 @@
+.container {
+    margin: 20px 0 0 100px;
+}
+.form-group {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas: 
+    'email email__value .'
+    'tel tel__input .'
+    'password password__input password__button';
+    grid-gap: 10px;
+}
+#email, #tel, #email__value, #tel__input, #password, #password__input,#password__button {
+    background-color: green;
+}
+#email {
+    grid-area: email;
+    text-align: left;
+    padding-top: 10px;
+}
+#email__value {
+    grid-area: email__value;
+    grid-column: 2/6;
+    width: 100%;
+}
+#tel {
+    grid-area: tel;
+    text-align: left;
+    padding-top: 10px;
+}
+#tel__input {
+    grid-area: tel__input;
+    grid-column: 2/6;
+}
+#password {
+    grid-area: password;
+    text-align: left;
+    padding-top: 10px;
+}
+#password__input {
+    grid-area: password__input;
+}
+#password__button {
+    grid-area: password__button;
+}
+label {
+    text-align: left;
+    padding-top: 10px;
+}
+.input {
+/* margin-left: 1%; */
+/* width: calc(100%-80px); */
+}
+.form-group:nth-child(3) .input {
+    /* float:left;
+    margin-left: 15%; */
+}
+button {
+    font-size: 20px;
+    border: none;
+    background-color: unset;
+    color: blue;
+    padding-top: 5px;
+    
+}
+.input input, .icons {
+    font-size: 20px;
+    box-sizing: content-box;
+    padding: 7px 0 7px 0;
+    
+}
+.icons {
+    margin-left: 30%;
+width: 50%;
+}
+a {
+    text-decoration: none;
+    color: rgb(30, 40, 80);
+}
+i {
+    font-size: 40px;
+    padding-right: 1.2vw;
+}
+i:hover{
+    transform: rotateX(40deg) rotateY(30deg);
+    color: aqua;
+}
+@media screen and (max-width: 28em) {
+    .container {
+        margin: 10px 0 0 10px;
+    }
+    .icons {
+        width: 70%;
+        margin-left: 30%;
+        display: block;
+    }
+}

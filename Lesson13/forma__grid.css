@@ -1,0 +1,80 @@
+.form-group {
+    display: grid;
+    grid-template-columns: [labels] 0.75fr [inputs] 2fr;
+    grid-auto-flow: row;
+    grid-gap: 0.5 em;
+}
+
+.form-group>label {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.form-group>.input {
+    grid-column: inputs;
+    grid-row: auto;
+}
+
+.form-group>button {
+    grid-column: buttons;
+    grid-row: auto;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+button {
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    background-color: unset;
+    color: blue;
+    padding-top: 5px;
+}
+
+label {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(30, 40, 80);
+}
+
+i {
+    font-size: 40px;
+    padding-right: 1.2vw;
+}
+
+i:hover {
+    transform: rotateX(40deg) rotateY(30deg);
+    color: aqua;
+}
+
+.input input,
+.input1 input,
+.input2 input,
+.icons {
+    font-size: 20px;
+    box-sizing: content-box;
+    padding: 7px 0 7px 0;
+}
+
+@media screen and (max-width: 34em) {
+    .container {
+        margin: 2%;
+    }
+
+    .form-group {
+        display: inherit;
+        grid-template-columns: [labels] 150px [inputs] 2fr;
+    }
+
+    .input {
+        display: inherit;
+        grid-template-columns: 0.75fr 100px;
+    }
+}

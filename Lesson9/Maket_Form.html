@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Maket_form.css" type="text/css">
+</head>
+
+<body>
+    <form class="form" method="post" action="https://fe.it-academy.by/TestForm.php">
+
+        <div class="label">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <div class="label0">
+            <div class="labelN">
+                <label>
+                    Название статьи:
+                </label>
+            </div>
+            <div class="text">
+                <input class="textin" type="text" name="nam" placeholder="Введите название статьи" required>
+            </div>
+        </div>
+
+        <label class="labelR">
+            Рубрика:
+        </label>
+        <select class="select" name="specialitylist">
+            <option value="Медицина">Медицина</option>
+            <option value="Литература">Литература</option>
+            <option value="Программирование" selected>Программирование</option>
+            <option value="Политология">Политология</option>
+            <option value="Культурология">Культурология</option>
+            <option value="История">История</option>
+            <option value="Технологический прогресс">Технологический прогресс</option>
+        </select><br>
+        <label class="labelP">
+            Публикация:
+        </label>
+        <div class="button1">
+            <label>
+                <input type="radio" name="choice">на сайте
+            </label>
+        </div>
+        <div class="button2">
+            <label>
+                <input type="radio" name="choice">в журнале
+            </label>
+        </div>
+        <div class="button3">
+            <label>
+                <input type="radio" name="choice">на сайте и в журнале
+            </label>
+        </div>
+        <br>
+
+        <label class="label">
+            Разрешить комментарии:
+        </label>
+        <input class="butagree" type="checkbox" name="agree" checked>
+        <br>
+        <label class="label">
+            Текст статьи:
+        </label>
+        <br>
+        <textarea class="text1" type="text" name="textarticle" placeholder="Введите текст статьи" required></textarea>
+        <br>
+        <input class="label" type="submit" value="Опубликовать">
+
+    </form>
+</body>
+
+</html>

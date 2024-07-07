@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .error-message {
+            display: none;
+        }
+        .error-message.active {
+            display:block;
+        }
+    </style>
+    
+        <label>Введите пункт списка дел</label>
+        <div style="flex-grow: 2;">
+        <p class="error-message">Ничего не ввели</p>
+        <input name="item" type="text" placeholder="Напишите дело">
+        </div>
+    <p>Список дел</p>
+    <ul></ul>
+</body>
+<script src="JS8_input.js"></script>
+</html>

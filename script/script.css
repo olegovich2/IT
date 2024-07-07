@@ -1,0 +1,59 @@
+.container {
+    margin: 20px 0 0 100px;
+}
+.form-group {
+    width: 100%;
+    margin-top: 10px;
+}
+label {
+    width: 15%;
+    float: left;
+    font-size: 20px;
+}
+.input {
+margin-left: 30%;
+width: calc(100%-246px);
+}
+.form-group:nth-child(3) .input {
+    float:left;
+    margin-left: 15%;
+}
+button {
+    font-size: 20px;
+    border: none;
+    background-color: unset;
+    color: blue;
+    padding-top: 5px;
+    
+}
+.input input, .icons {
+    font-size: 20px;
+    box-sizing: content-box;
+    padding: 7px 0 7px 0;
+}
+.icons {
+    margin-left: 30%;
+width: 50%;
+}
+a {
+    text-decoration: none;
+    color: rgb(30, 40, 80);
+}
+i {
+    font-size: 40px;
+    padding-right: 1.2vw;
+}
+i:hover{
+    transform: rotateX(40deg) rotateY(30deg);
+    color: aqua;
+}
+@media screen and (max-width: 28em) {
+    .container {
+        margin: 10px 0 0 10px;
+    }
+    .icons {
+        width: 70%;
+        margin-left: 30%;
+        display: block;
+    }
+}

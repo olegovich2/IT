@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник рецептов</title>
+    <link rel="stylesheet" href="FinalWork.css">
+    <link rel="stylesheet" href="contentAll.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d23624fc6e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="container">
+        <div id="navbar_button" class="navbar_buttons">
+            <div class="menu__item">
+                <button type="button" class="navbar__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Main.html">Главная</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Contact.html">Контакты</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./Soup.html">Первые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SecondCourse.html">Вторые блюда</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                    </li>
+                    <li class="dropdown__menu__item">
+                        <a class="dropdown__menu__link" href="./About.html">О сайте</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="navbar__home">
+                <a class="clr" href="./Main.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </button>
+        </div>
+        <div id="navbar_list" class="navbar__list">
+            <ul class="navbar__list__ul">
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./Soup.html">Первые блюда</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SecondCourse.html">Вторые блюда</a>
+                </li>
+                <li class="navbar__list__li active">
+                    <a class="navbar__list__link" href="./AlcoholicDrinks.html">Алкогольные напитки</a>
+                </li>
+                <li class="navbar__list__li">
+                    <a class="navbar__list__link" href="./SoftDrinks.html">Безалкогольные напитки</a>
+                </li>
+            </ul>
+        </div>
+        <div id="navbar_search" class="navbar__search">
+            <form class="form__style">
+                <input class="navbar__search__input" type="text" placeholder="Искать здесь...">
+                <button class="navbar__search__button" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="navbar__search__button1" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="containerForContent">
+        <header class="full-screen">
+            <div class="full-screen__body">
+                <div class="full-screen__caption">
+                    Алкогольные напитки
+                </div>
+            </div>
+            <img class="full-screen__img" src="./Images/alco.jpg">
+        </header>
+        <main class="main">
+            <section class="section">
+                <a id="up"></a>
+                <div class="hello"></div>
+                <div class="main_content">
+                    <div class="points">
+                        <div class="points_container">
+                            <div class="points_body">
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/oasis_cocktail.jpg" alt="Коктейль Оазис" title="Коктейль Оазис">
+                                        <div class="card_caption">
+                                            <h3>Коктейль Оазис</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Джин – 50 мл (3 ст. л.)</li>
+                                                <li>Ликер «Кюрасао» голубой – 12 мл (2 ч. л.)</li>
+                                                <li>Тоник – 100 мл</li>
+                                            </ol>
+                                            <p>Влейте джин в стакан, наполовину заполненный колотым льдом. Добавьте Кюрасао, влейте тоник и перемешайте. Украсьте
+                                                долькой лимона и веточкой мяты.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/pina-colada.jpg" alt="Пина Колада" title="Пина Колада">
+                                        <div class="card_caption">
+                                            <h3>Пина Колада</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Белый ром 60мл</li>
+                                                <li>Темный ром 15мл</li>
+                                                <li>Кокосовый сироп 40мл</li>
+                                                <li>Лаймовый сок 20мл</li>
+                                                <li>Ломтик ананаса с кожурой и красная коктейльная вишня (для украшения)</li>
+                                                <li>Ананасовые листья 1шт</li>
+                                                <li>Коктейльная вишня красная 5г</li>
+                                                <li>Дробленый лед 60г</li>
+                                            </ol>
+                                            <p>Поместить все ингредиенты в блендер со льдом и взбивать в течение 15 секунд. Перелить содержимое в бокал, украсить
+                                                бокал ломтиком ананаса и коктейльной вишней. Подавать с коктейльной трубочкой.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/daikiri.jpg" alt="Дайкири" title="Дайкири">
+                                        <div class="card_caption">
+                                            <h3>Дайкири</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Белый ром 60 мл</li>
+                                                <li>Сок лайма 30 мл</li>
+                                                <li>Сахарный сироп 15 мл</li>
+                                                <li>Лед 60 г</li>
+                                                <li>Цедра лимона для украшения</li>
+                                            </ol>
+                                            <p>Добавьте все жидкие ингредиенты в коктейльный шейкер. Смешайте. Добавьте лед в шейкер. Встряхивайте, пока содержимое
+                                                хорошо не охладится. Перелейте готовую смесь через стрейнер в охлажденный бокал-блюдце для шампанского.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/mohito.jpg" alt="Мохито алкогольный" title="Мохито алкогольный">
+                                        <div class="card_caption">
+                                            <h3>Мохито алкогольный</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Белый ром 50мл</li>
+                                                <li>Сахарный сироп 15мл</li>
+                                                <li>Содовая 100мл</li>
+                                                <li>Лайм 80г</li>
+                                                <li>Мята 3г</li>
+                                                <li>Дробленый лед 200г</li>
+                                            </ol>
+                                            <p>Положи в хайбол лайм 3 дольки и подави мадлером.
+                                                Возьми мяту 10 листиков в одну руку и хлопни по ним другой рукой.
+                                                Положи мяту в хайбол.
+                                                Наполни бокал дробленым льдом доверху.
+                                                Добавь сахарный сироп 15 мл и белый ром 50 мл.
+                                                Долей содовую доверху и аккуратно размешай коктейльной ложкой.
+                                                Досыпь немного дробленого льда.
+                                                Укрась веточкой мяты и долькой лайма.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/pink_lady.jpg" alt="Розовая Леди" title="Розовая Леди">
+                                        <div class="card_caption">
+                                            <h3>Розовая Леди</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Сахарная пудра для декорации бокала</li>
+                                                <li>Джин «Плимут» (Plymouth) — 37 мл (6 ч. л.)</li>
+                                                <li>Гранатовый сироп «Гренадин» (Grenadine) — 12 мл (2 ч. л.)</li>
+                                                <li>Сливки густые — 12 мл (2 ч. л.)</li>
+                                                <li>Лимонный сок — 6 мл (1 ч. л.)</li>
+                                                <li>Яичный белок — 25 мл (1,5 ст.л.)</li>
+                                            </ol>
+                                            <p>Чтобы получить яркий розовый ободок, окуните край бокала сперва в гранатовый сироп, а затем — в сахар. Взболтайте
+                                                ингредиенты коктейля со льдом и влейте в подготовленный бокал. Украсьте вишней.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/klubnika_vine.jpg" alt="Клуничный коктейль-смузи с белым вином" title="Клуничный коктейль-смузи с белым вином">
+                                        <div class="card_caption">
+                                            <h3>Клуничный коктейль-смузи</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Клубника - 100 г</li>
+                                                <li>Вино белое сухое - 100 мл</li>
+                                                <li>Сахар - 1 ст. ложка</li>
+                                                <li>Лёд - 40 г</li>
+                                            </ol>
+                                            <p>У клубники удалите листики. Разрежьте ягоды пополам и отправьте в чашу блендера. Добавьте лёд и сахар. Влейте к
+                                                клубнике со льдом белое сухое вино. Пробейте всё до однородности. Клубничный коктейль-смузи с белым вином готов.
+                                                Разлейте коктейль по бокалам и сразу подавайте. При желании добавьте лёд в бокалы.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/margarita.jpg" alt="Маргарита" title="Маргарита">
+                                        <div class="card_caption">
+                                            <h3>Маргарита</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Серебряная текила 50 мл</li>
+                                                <li>Трипл сек Fruko Schulz 25 мл</li>
+                                                <li>Сахарный сироп 10	мл</li>
+                                                <li>Лаймовый сок 30	мл</li>
+                                                <li>Лайм 10	г</li>
+                                                <li>Соль 2 г</li>
+                                                <li>Лед в кубиках 200 г</li>
+                                            </ol>
+                                            <p>Сделай на бокале для маргариты соленую окаемку.
+                                                Налей в шейкер лаймовый сок 30 мл, сахарный сироп 10 мл, ликер трипл сек 25 мл и серебряную текилу 50 мл.
+                                                Наполни шейкер кубиками льда и взбей.
+                                                Перелей через стрейнер в охлажденный бокал для маргариты.
+                                                Укрась кружком лайма.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/long_island.jpg" alt="Long Island ice tea" title="Long Island ice tea">
+                                        <div class="card_caption">
+                                            <h3>Long Island ice tea</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Водка Царская 30 мл</li>
+                                                <li>Белый ром 30 мл</li>
+                                                <li>Серебряная текила 30 мл</li>
+                                                <li>Лондонский сухой джин 30 мл</li>
+                                                <li>Трипл сек Fruko Schulz 30 мл</li>
+                                                <li>Сахарный сироп 30 мл</li>
+                                                <li>Лимонный сок 30	мл</li>
+                                                <li>Кола 100 мл</li>
+                                                <li>Лимон 40 г</li>
+                                                <li>Лед в кубиках 300 г</li>
+                                            </ol>
+                                            <p>Наполни хайбол кубиками льда доверху.
+                                                Налей лимонный сок 30 мл, сахарный сироп 30 мл и ликер трипл сек 30 мл.
+                                                Добавь водку 30 мл, джин 30 мл, белый ром 30 мл и серебряную текилу 30 мл.
+                                                Долей колу доверху и аккуратно размешай коктейльной ложкой.
+                                                Укрась долькой лимона.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/kuba_libre.jpg" alt="Куба Либре" title="Куба Либре">
+                                        <div class="card_caption">
+                                            <h3>Куба Либре</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Золотой ром 50	мл</li>
+                                                <li>Лаймовый сок 10	мл</li>
+                                                <li>Кола 140 мл</li>
+                                                <li>Лайм 20	г</li>
+                                                <li>Лед в кубиках 180 г</li>
+                                            </ol>
+                                            <p>Наполни хайбол кубиками льда доверху.
+                                                Налей лаймовый сок 10 мл и золотой ром 50 мл.
+                                                Долей колу доверху и аккуратно размешай коктейльной ложкой.
+                                                Укрась кружками лайма.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="card-orientation">
+                                    <div class="card">
+                                        <img class="img" src="./Images/mai_tai.jpg" alt="Май Тай" title="Май Тай">
+                                        <div class="card_caption">
+                                            <h3>Май Тай</h3>
+                                        </div>
+                                        <div class="recipe_content close">
+                                            <ol>Список ингредиентов:
+                                                <li>Выдержанный ром 50	мл</li>
+                                                <li>Ликер драй оранж De Kuyper 20	мл</li>
+                                                <li>Сахарный сироп 10	мл</li>
+                                                <li>Миндальный сироп 10	мл</li>
+                                                <li>Лаймовый сок 20	мл</li>
+                                                <li>Лайм 30	г</li>
+                                                <li>Мята 1	г</li>
+                                                <li>Дробленый лед 150 г</li>
+                                                <li>Лед в кубиках 200 г</li>
+                                            </ol>
+                                            <p>Наполни рокс дробленым льдом доверху.
+                                                Налей в шейкер лаймовый сок 20 мл, сахарный сироп 10 мл, миндальный сироп 10 мл, ликер драй оранж 20 мл и выдержанный ром 50 мл.
+                                                Наполни шейкер кубиками льда и взбей.
+                                                Перелей через стрейнер в рокс.
+                                                Досыпь немного дробленого льда.
+                                                Укрась долькой лайма и веточкой мяты.</p>
+                                        </div>
+                                    </div>
+                                    <button class="open_button"><a class="a_up" href="#up">Посмотреть</a></button>
+                                    <button class="close_button close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__button">
+                <button class="button__up" type="button">
+                    <a href="#up"><i class="fa-solid fa-chevron-up"></i>
+                    </a>
+                </button>
+                <button class="button__contact" type="button">
+                    <a href="./Contact.html"><i class="fa fa-address-book" aria-hidden="true"></i>
+                    </a>
+                </button>
+                <button class="button__about" type="button">
+                    <a href="./About.html"><i class="fa fa-info-circle"></i>
+                    </a>
+                </button>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Владислав Пилипенко</p>
+    </footer>
+</body>
+<script src="click1.js"></script>
+<script src="click2.js"></script>
+<script src="greetingAll.js"></script>
+<script src="openCard.js"></script>
+
+</html>

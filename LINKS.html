@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .firstlinks {
+            min-width: 600px;
+
+            span {
+                color: red;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            a {
+                color: yellowgreen;
+            }
+        }
+
+        /* Вертикальный разделитель уже был в тексте, его только стилизовал за счет тега span. 
+        Реализация в одну строку решена установкой минимальной ширины*/
+        .secondlinks {
+            min-width: 600px;
+
+            span::after {
+                content: '|';
+                color: red;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+
+            a {
+                color: yellowgreen;
+            }
+
+            a:hover {
+                color: red;
+            }
+        }
+
+        /* Вертикального разделителя не было, он добавлен за счет селектора псевдоэлемента ::after и тега span. 
+        Пожалуй, самый простой метод - это плюс. Минус: необходимо испольовать теги. 
+        Реализация в одну строку решена установкой минимальной ширины*/
+        .thirdlinks {
+            min-width: 600px;
+
+            a {
+                color: yellowgreen;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            [data-bookref]::after {
+                content: attr(data-bookref);
+                color: red;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+        }
+
+        /* Вертикальный разделитель добавлен при помощи data-bookref. 
+        Плюс: четко работает. Минус нужно расписывать тег. 
+        Реализация в одну строку решена установкой минимальной ширины */
+        .forthlinks {
+            min-width: 600px;
+
+            a {
+                color: yellowgreen;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            /* a::after {
+                content: ' | ';
+                color: red;
+                font-weight: bolder;
+                font-size: 22px;
+            } */
+            a:nth-child(even) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+
+            a:nth-child(1) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+
+            a:nth-child(3) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+        }
+
+        /* Разделитель за счет границы и отступа. Плюс - простота. Минус- код не универсален, требуется точечная подгонка.
+        Реализация в одну строку решена установкой минимальной ширины*/
+        .fifthlinks {
+            min-width: 600px;
+
+            td:nth-child(even) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+
+            td:nth-child(1) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+
+            td:nth-child(3) {
+
+                min-width: 60px;
+                border-right-color: red;
+                border-right-style: solid;
+                padding-right: 3px;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            a {
+                color: yellowgreen;
+            }
+        }
+
+        /* Реализация в одну строку решена установкой минимальной ширины таблицы и минимальной ширины ячеек.
+        Разделитель за счет границы и отступа. Плюс - простота. Минус- код не универсален, требуется точечная подгонка.
+         */
+        .sixthlinks {
+            min-width: 600px;
+
+            a {
+                color: yellowgreen;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            a::after {
+                content: ' | ';
+                color: red;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+
+        }
+        /* Разделитель за счет псевдокласса after. Плюс - нет. Минус- нет ожидаемого результата, не корректируются изменения.
+        Реализация в одну строку решена установкой минимальной ширины */
+        /* Итог: с тегом span более ожидаемый результат */
+    </style>
+    <div class="firstlinks">
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+            первая ссылка</a>
+        <span> | </span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+            вторая ссылка</a>
+        <span> | </span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+            третья ссылка</a>
+        <span> | </span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+            четвертая ссылка</a>
+        <span> | </span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+            пятая ссылка</a>
+    </div>
+    <div class="secondlinks">
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+            первая ссылка</a>
+        <span></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+            вторая ссылка</a>
+        <span></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+            третья ссылка</a>
+        <span></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+            четвертая ссылка</a>
+        <span></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+            пятая ссылка</a>
+    </div>
+    <div class="thirdlinks">
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+            первая ссылка</a>
+        <span data-bookref="|"></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+            вторая ссылка</a>
+        <span data-bookref="|"></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+            третья ссылка</a>
+        <span data-bookref="|"></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+            четвертая ссылка</a>
+        <span data-bookref="|"></span>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+            пятая ссылка</a>
+    </div>
+    <div class="forthlinks">
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+            первая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+            вторая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+            третья ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+            четвертая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+            пятая ссылка</a>
+    </div>
+    <div class="fifthlinks">
+        <table>
+            <tr>
+                <td>
+                    <a
+                        href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+                        первая ссылка</a>
+                </td>
+                <td> <a
+                        href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+                        вторая ссылка</a>
+                </td>
+                <td> <a
+                        href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+                        третья ссылка</a>
+                </td>
+                <td> <a
+                        href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+                        четвертая ссылка</a>
+                </td>
+                <td> <a
+                        href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+                        пятая ссылка</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="sixthlinks">
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C">
+            первая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0">
+            вторая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%83%D0%B7%D0%BD%D0%B8%D0%BA_%D0%90%D0%B7%D0%BA%D0%B0%D0%B1%D0%B0%D0%BD%D0%B0">
+            третья ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9A%D1%83%D0%B1%D0%BE%D0%BA_%D0%BE%D0%B3%D0%BD%D1%8F">
+            четвертая ссылка</a>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D0%9E%D1%80%D0%B4%D0%B5%D0%BD_%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81%D0%B0">
+            пятая ссылка</a>
+    </div>
+</body>
+
+</html>

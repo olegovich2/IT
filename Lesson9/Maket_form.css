@@ -1,0 +1,127 @@
+form {
+    display: block;
+    width: 100%;
+}
+
+.label,
+.labelR,
+.labelP {
+    margin: 5px;
+}
+
+.label0 {
+    display: inline-block;
+    width: 100%;
+}
+
+.labelN {
+    display: inline-block;
+    margin: 5px 0px 5px 5px;
+    width: 120px;
+}
+
+.text {
+    display: inline-block;
+    margin: 5px 5px 5px 60px;
+    width: 83%;
+}
+
+.textin {
+    width: 98%;
+}
+
+.select {
+    margin: 5px 5px 5px 116px;
+}
+
+.button1 {
+    display: inline-block;
+    margin: 5px 5px 5px 88px;
+}
+
+.button2,
+.button3 {
+    display: inline-block;
+}
+
+.butagree {
+    margin: 5px 5px 5px 4px;
+}
+
+.text1 {
+    width: 98%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 73em) {
+    .text {
+        display: inline-block;
+        margin: 5px 5px 5px 60px;
+        width: 80%;
+    }
+
+    .textin {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 62em) {
+    .text {
+        display: inline-block;
+        margin: 5px 5px 5px 60px;
+        width: 77%;
+    }
+
+    .textin {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 54em) {
+    .text {
+        display: inline-block;
+        margin: 5px 5px 5px 60px;
+        width: 72%;
+    }
+
+    .textin {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .text {
+        display: inline-block;
+        width: 98%;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .labelR,
+    .labelP {
+        width: 95%;
+        display: block;
+    }
+
+    .select {
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        display: inline-block;
+        width: 98%;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+}
